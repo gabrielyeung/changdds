@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <section class="site-margin site-content dentalcare-content">
+      <nav class="page-nav">
+        <h1>Dental Care</h1>
+        <section>
+          <h2>Services Provided</h2>
+          <ul>
+            <li><a {% if page.care contains "exams" %}class="selected"{% endif %} href="/dentalcare/exams/">Exams and X-Rays</a></li>
+            <li><a {% if page.care contains "cleanings" %}class="selected"{% endif %} href="/dentalcare/cleanings/">Cleanings</a></li>
+            <li><a {% if page.care contains "fillings" %}class="selected"{% endif %} href="/dentalcare/fillings/">Fillings</a></li>
+            <li><a {% if page.care contains "crowns" %}class="selected"{% endif %} href="/dentalcare/crowns/">Crowns (Caps)</a></li>
+            <li><a {% if page.care contains "implants" %}class="selected"{% endif %} href="/dentalcare/implants/">Implant Crowns</a></li>
+            <li><a {% if page.care contains "bridges" %}class="selected"{% endif %} href="/dentalcare/bridges/">Bridges</a></li>
+            <li><a {% if page.care contains "dentures" %}class="selected"{% endif %} href="/dentalcare/dentures/">Dentures</a></li>
+            <li><a {% if page.care contains "rootcanals" %}class="selected"{% endif %} href="/dentalcare/rootcanals/">Root Canals</a></li>
+            <li><a {% if page.care contains "extractions" %}class="selected"{% endif %} href="/dentalcare/extractions/">Extractions</a></li>
+            <li><a {% if page.care contains "nightguards" %}class="selected"{% endif %} href="/dentalcare/nightguards/">Nightguards</a></li>
+            <li><a {% if page.care contains "bleaching" %}class="selected"{% endif %} href="/dentalcare/bleaching/">Bleaching</a></li>
+            <li><a {% if page.care contains "veneers" %}class="selected"{% endif %} href="/dentalcare/veneers/">Veneers</a></li>
+          </ul>
+        </section>
+      </nav>
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

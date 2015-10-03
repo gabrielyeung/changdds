@@ -1,0 +1,21 @@
+/**
+ * Reset some basic elements
+ */
+body {
+  margin: 0px;
+  border-top: 3px solid #1E8BC3;
+}
+.site-margin {
+  width: 1000px;
+  margin: auto;
+}
+.site-content {
+  top: -15px;  /* adjust  bc of .header-action-call position:relative*/
+  position: relative;
+}
+button {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+}
