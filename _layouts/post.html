@@ -20,6 +20,10 @@ category: blog
       </section>
   </nav>
   <section class="page-content">
+    {% if page.blog-basepage %}
+      {% assign post = site.posts.first %}
+      {% assign content = post.content %}
+    {% endif %}
     <h1 class="entry-title">
       {% if page.title %}
         <a href="{{ root_url }}{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
