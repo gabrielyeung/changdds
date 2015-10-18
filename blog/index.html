@@ -20,6 +20,8 @@ category: blog
       </section>
   </nav>
   <section class="page-content">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
     <h1 class="entry-title">
       {% if page.title %}
         <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
@@ -28,7 +30,7 @@ category: blog
         <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
       {% endif %}
     </h1>
-    <div class="entry-content">	{{ content }}</div>
+    <div class="entry-content">{{ content }}</div>
   </section>
 
   <div style="clear: both;"></div>
