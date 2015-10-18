@@ -24,10 +24,10 @@ category: blog
     {% assign content = post.content %}
     <h1 class="entry-title">
       {% if page.title %}
-        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+        <a href="{{ root_url }}{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endif %}
       {% if post.title %}
-        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       {% endif %}
     </h1>
     <div class="entry-content">{{ content }}</div>
