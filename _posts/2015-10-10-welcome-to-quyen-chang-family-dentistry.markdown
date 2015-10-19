@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Quyen Chang Family Dentistry!"
 date:   2015-10-10 15:39:58
+categories: blog
 ---
 Welcome! We're excited to introduce you to our new website experience! Its been a long time in the making and we're happy to share this new online channel for you all to keep in touch with us!
 
