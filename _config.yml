@@ -9,11 +9,11 @@ baseurl: "/changdds" # the subpath of your site, e.g. /blog
 # https://github.com/jekyll/jekyll/issues/332
 # https://github.com/jekyll/jekyll/pull/1291/files
 # then use.. jekyll serve --baseurl ''
-
 url: "http://www.quyenchangdds.com" # the base hostname & protocol for your site
 
-twitter_username: jekyllrb
-github_username:  jekyll
+# Sass settings
+sass:
+    style: compressed
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,42 @@
+/* about us page */
+.aboutus-content .page-nav a {
+  text-decoration: none;
+}
+.aboutus-content .drchang-profile-pic {
+  float: right;
+  padding: 20px;
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+.aboutus-content .team {
+  height: 450px;
+}
+.aboutus-content .team section.teammate {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.aboutus-content .team section.teammate img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  padding-top: 0px;
+}
+.aboutus-content .team section.teammate .name {
+  color: #EB5A2F;
+  margin-bottom: 4px;
+}
+.aboutus-content .team section.teammate .job {
+  margin-top: 0px;
+}
+.aboutus-content .team section.teammate .bio {
+  width: 80%;
+  margin: auto;
+}

@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+/* site css */
 body {
   margin: 0px;
   border-top: 3px solid #1E8BC3;
@@ -10,7 +8,6 @@ body {
   margin: auto;
 }
 .site-content {
-  top: -15px;  /* adjust  bc of .header-action-call position:relative*/
   position: relative;
 }
 button {
@@ -18,4 +15,68 @@ button {
   border: none;
   border-radius: 4px;
   padding: 20px;
+}
+@font-face { font-family: calendas; src: url('Calendas_Plus.otf'); } 
+.visuallyhidden {
+  display: none;
+}
+
+/* page left nav bar */
+.page-nav {
+  float: left;
+  width: 245px;
+}
+.page-nav h1 {
+  font-size: 32px;
+  font-family: calendas;
+  font-weight: 100;
+  margin: 16px 0px 24px 0px;
+}
+.page-nav section {
+  text-decoration: none;
+  font-family: roboto;
+  font-size: 14px;
+}
+.page-nav section h2 {
+  color: #1e8bc3;
+  font-weight: 300;
+  font-size: 15px;
+}
+.page-nav ul {
+  padding-left: 24px;
+}
+.page-nav li {
+  list-style-type: none;
+  padding-bottom: 18px;
+}
+.page-nav li a {
+  text-decoration: none;
+}
+
+/* css for fixed nav bar */
+.aboutus-content .page-nav {
+  transition:top 1s linear;
+}
+.navbar-fixed {
+  top: -10px;
+  z-index: 100;
+  position: fixed;
+}
+
+
+/* page content */
+.page-content {
+  margin-left: 245px;
+  font-family: roboto;
+}
+.page-content figure {
+  margin: 0px;
+}
+.page-content figure img {
+  padding-top: 8px;
+}
+.page-content h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #1e8bc3;
 }
