@@ -1,26 +1,29 @@
 /* dental care page */
-.dentalcare-content .page-nav li a {
-  color: #323234;
+.dentalcare-content .page-nav {
+  li a {
+    color: #323234;
+    &.selected {
+      font-weight: 400;
+    }
+  }
 }
-.dentalcare-content .page-nav li a.selected {
-  font-weight: 400;
-}
+
 .dentalcare-content .page-content {
   min-height: 575px;
-}
-.dentalcare-content .page-content .dentalcare-links {
-  margin-bottom: 32px;
-}
-.dentalcare-content .page-content .dentalcare-links ul {
-  width: 32%;
-  padding-left: 0px;
-  display: inline-block;
-  font-weight: normal;
-}
-.dentalcare-content .page-content .dentalcare-links ul li {
-  list-style-type: none;
-  text-align: center;
-}
-.dentalcare-content .page-content .dentalcare-links ul li a {
-  text-decoration: none;
+  .dentalcare-links {
+      margin-bottom: 32px;
+      ul {
+          width: 32%;
+          padding-left: 0px;
+          display: inline-block;
+          font-weight: normal;
+          li {
+              list-style-type: none;
+              text-align: center;
+              a {
+                  text-decoration: none;
+              }
+          }
+      }
+  }
 }
