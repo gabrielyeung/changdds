@@ -15,8 +15,11 @@ button {
   border: none;
   border-radius: 4px;
   padding: 20px;
+  &.schedule-btn:hover {
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  }
 }
-@font-face { font-family: calendas; src: url('Calendas_Plus.otf'); } 
+@font-face { font-family: calendas; src: url('Calendas_Plus.otf'); }
 .visuallyhidden {
   display: none;
 }
