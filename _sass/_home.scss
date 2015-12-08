@@ -62,3 +62,56 @@ section.reasons-to-believe-banner {
   width: 85%;
   margin: auto;
 }
+
+
+.main-window {
+  transition: all 0.15s ease-out;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  top: 0px;
+  z-index: 0;
+  background: #1E8BC3;
+  transition: all 0.15s ease-out;
+  padding-top: 30px;
+  ul {
+    list-style-type: none;
+    padding-left: 30px;
+    li {
+      & + li {
+        padding-top: 14px;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}
+input#sidebartoggler {
+  display: none;
+  &:checked ~ .toggle {
+    left: 200px;
+  }
+  &:checked ~ .main-window {
+    margin-left: 180px;
+  }
+}
+.toggle {
+  display: none;
+  color: #1E8BC3;
+  position: fixed;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  transition: all 0.15s ease-out;
+  &:hover {
+    cursor: pointer;
+    color: #383838;
+  }
+}

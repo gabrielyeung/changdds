@@ -2,8 +2,24 @@
 <html>
   {% include head.html %}
   <body>
+    <input type="checkbox" id="sidebartoggler" name="" value="">
+    <label for="sidebartoggler" class="toggle">☰</label>
+
+    <div class="main-window">
     {% include header.html variable-param=page.category %}
     {{ content }}
     {% include footer.html %}
+    </div>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="{{site.baseurl}}/aboutus">About Us</a></li>
+            <li><a href="{{site.baseurl}}/dentalcare">Dental Care</a>
+            <li><a href="{{site.baseurl}}/patientinfo">Patient Information</a></li>
+            <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+            <li><a href="{{site.baseurl}}/contactus">Contact Us</a></li>
+        </ul>
+    </div>
+
   </body>
 </html>
