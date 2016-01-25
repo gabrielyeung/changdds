@@ -1,20 +1,13 @@
 // variables/functions
-
 $basefont: 14;
 @function em($target, $context: $basefont) {
 	@return ($target / $context) * 1em;
 }
 
-
-$black: #323234;
-$blue: #1e8bc3;
-$darkblue: #004C7F;
-$orange: #f2784b;
-$darkorange: #eb5a2f;
-
-
-
 /* site css */
+.visuallyhidden {
+  display: none;
+}
 body {
   margin: 0px;
   border-top: 3px solid $blue;
@@ -26,6 +19,9 @@ body {
 .site-content {
   position: relative;
 }
+a, a:hover {
+	text-decoration: none;
+}
 button {
   color: #fff;
   border: none;
@@ -36,40 +32,35 @@ button {
   }
 }
 @font-face { font-family: calendas; src: url('Calendas_Plus.otf'); }
-.visuallyhidden {
-  display: none;
-}
+
+
 
 /* page left nav bar */
 .page-nav {
   float: left;
-  width: 245px;
-}
-.page-nav h1 {
-  font-size: 32px;
-  font-family: calendas;
-  font-weight: 100;
-  margin: 16px 0px 24px 0px;
-}
-.page-nav section {
-  text-decoration: none;
-  font-family: roboto;
-  font-size: 14px;
-}
-.page-nav section h2 {
-  color: #1e8bc3;
-  font-weight: 300;
-  font-size: 15px;
-}
-.page-nav ul {
-  padding-left: 24px;
-}
-.page-nav li {
-  list-style-type: none;
-  padding-bottom: 18px;
-}
-.page-nav li a {
-  text-decoration: none;
+  width: em(245);
+	h1 {
+	  font-size: em(32);
+	  font-family: calendas;
+	  font-weight: 100;
+	  margin: em(16,32) 0px em(24,32) 0px;
+	}
+	section {
+	  font-family: roboto;
+		h2 {
+		  color: $blue;
+		  font-weight: 300;
+		  font-size: em(15);
+		}
+		// ul element used on DentalCare/Blog pages
+		ul {
+		  padding-left: em(24);
+			li {
+			  list-style-type: none;
+			  padding-bottom: em(18);
+			}
+		}
+	}
 }
 
 /* css for fixed nav bar */
@@ -85,17 +76,17 @@ button {
 
 /* page content */
 .page-content {
-  margin-left: 245px;
+  margin-left: em(245);
   font-family: roboto;
 	h1 {
-	  font-size: 24px;
+	  font-size: em(24);
 	  font-weight: 300;
-	  color: #1e8bc3;
+	  color: $blue;
 	}
 	figure {
 	  margin: 0px;
 		img {
-		  padding-top: 8px;
+		  padding-top: em(8);
 		}
 	}
 }

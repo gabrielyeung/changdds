@@ -1,66 +1,57 @@
 
 /* home page css */
 .hero-banner figure {
-  height: 450px;
+  height: em(450);
   margin: 0px;
   font-family: roboto;
   font-weight: 100;
   position: relative;
+  figcaption {
+    font-size: em(32);
+    position: absolute;
+    bottom: em(20,32);
+    padding-left: em(40,32);
+    color: $black;
+    p {
+      margin: 0px;
+    }
+    p.dds {
+      font-size: em(42,32);
+      font-family: calendas;
+      font-feature-settings: "salt" 2;
+      -moz-font-feature-settings: "salt" 2;
+      -ms-font-feature-settings: "salt" 2;
+      -webkit-font-feature-settings: "salt" 2;
+    }
+  }
 }
-.hero-banner figure figcaption {
-  font-size: 32px;
-  position: absolute;
-  bottom: 20px;
-  padding-left: 40px;
-  color: #323234;
-}
-.hero-banner figure figcaption p {
-  margin: 0px;
-}
-.hero-banner figure button {
-  font-family: roboto;
-  font-weight: 100;
-  font-size: 26px;
-  position: absolute;
-  bottom: 40px;
-  background-color: #1E8BC3;
-  margin-left: 670px;
-}
-.hero-banner figure figcaption p.dds {
-  font-size: 42px;
-  font-family: calendas;
-  font-feature-settings: "salt" 2;
-  -moz-font-feature-settings: "salt" 2;
-  -ms-font-feature-settings: "salt" 2;
-  -webkit-font-feature-settings: "salt" 2;
-}
+
 section.reasons-to-believe-banner {
-  margin-top: 20px;
-}
-.reasons-to-believe-banner ul {
-  padding-left: 0px;
-}
-.reasons-to-believe-banner li {
-  width: 33%;
-  display: table-cell;
-  font-family: roboto;
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.reasons-to-believe-banner li .symbol {
-  display: block;
-}
-.reasons-to-believe-banner li .tag {
-  font-weight: 500;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.reasons-to-believe-banner li .reason {
-  font-family: roboto;
-  font-size: 16px;
-  width: 85%;
-  margin: auto;
+  margin-top: em(20);
+  ul {
+    padding-left: 0px;
+    li {
+      width: 33%;
+      display: table-cell;
+      font-family: roboto;
+      text-align: center;
+      padding: 0 em(30);
+      .symbol {
+        display: block;
+      }
+      .tag {
+        font-weight: 500;
+        font-size: em(18);
+        text-transform: uppercase;
+      }
+      .reason {
+        font-family: roboto;
+        font-size: em(16);
+        width: 85%;
+        margin: auto;
+      }
+    }
+  }
 }
 
 
