@@ -1,18 +1,17 @@
 
 /* blog page */
 .blog-content .page-nav {
-  width: 230px;
-  margin-right: 12px;
+  width: em(230);
+  margin-right: em(12);
   h1 {
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: em(12,32);
   }
   .post-list {
     h2 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-left: 12px;
-      padding-top: 2px;
+      margin: 0px;
+      padding-left: em(12,15);
+      padding-top: em(2,15);
     }
     li:last-of-type {
       padding-bottom: 0px;

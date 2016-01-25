@@ -1,7 +1,23 @@
+// variables/functions
+
+$basefont: 14;
+@function em($target, $context: $basefont) {
+	@return ($target / $context) * 1em;
+}
+
+
+$black: #323234;
+$blue: #1e8bc3;
+$darkblue: #004C7F;
+$orange: #f2784b;
+$darkorange: #eb5a2f;
+
+
+
 /* site css */
 body {
   margin: 0px;
-  border-top: 3px solid #1E8BC3;
+  border-top: 3px solid $blue;
 }
 .site-margin {
   width: 1000px;
@@ -71,15 +87,15 @@ button {
 .page-content {
   margin-left: 245px;
   font-family: roboto;
-}
-.page-content figure {
-  margin: 0px;
-}
-.page-content figure img {
-  padding-top: 8px;
-}
-.page-content h1 {
-  font-size: 24px;
-  font-weight: 300;
-  color: #1e8bc3;
+	h1 {
+	  font-size: 24px;
+	  font-weight: 300;
+	  color: #1e8bc3;
+	}
+	figure {
+	  margin: 0px;
+		img {
+		  padding-top: 8px;
+		}
+	}
 }
