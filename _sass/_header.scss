@@ -1,115 +1,122 @@
 /* header */
 header {
-  padding-top: 30px;
+  padding-top: em(30);
   font-family: roboto;
 }
 header .header-banner {
-  margin-bottom: 20px;
+  margin-bottom: em(20);
+  figure {
+    margin-left: em(0);
+    height: em(43);
+  }
 }
-header .header-banner figure {
-  margin-left: 0px;
-  height: 43px;
-}
-header .header-action-call {
+header .header-banner .header-action-call {
   float: right;
-  font-size: 16px;
-  color: #323234;
+  font-size: em(16);
+  color: $black;
   position: relative;
-  top: -30px;
+  top: em(-30,16);
+  a {
+    text-decoration: none;
+  }
+  span.icon-location {
+    padding-left: em(4,16);
+  }
+  .separator {
+    padding: 0 em(10,16);
+  }
+  .number a {
+    color: $blue;
+    font-weight: 400;
+  }
+  button {
+    font-weight: 300;
+    background-color: $orange;
+    padding: em(10,16) em(20,16);
+    float: right;
+    position: relative;
+    top: em(20,16);
+  }
 }
-header .header-action-call a {
-  text-decoration: none;
-}
-header .header-action-call span.icon-location {
-  padding-left: 4px;
-}
-header .header-action-call .separator {
-  padding: 0 10px;
-}
-header .header-action-call .number a {
-  color: #1e8bc3;
-  font-weight: 400;
-}
-header .header-action-call button {
-  font-weight: 300;
-  background-color: #F2784B;
-  font-size: 16px;
-  padding: 10px 20px;
-  float: right;
-  position: relative;
-  top: 20px;
-}
+
 header .site-nav {
-  height: 35px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #323234;
+  height: em(35);
+  margin-bottom: em(10);
+  color: $black;
+  ul {
+    padding-left: em(0);
+    margin: em(0);
+    li {
+      list-style-type: none;
+      float: left;
+      padding-right: em(45);
+      a {
+        text-decoration: none;
+        color: $black;
+        padding: em(10);
+      }
+    }
+  }
 }
-header .site-nav ul {
-  padding-left: 0px;
-  margin: 0px;
-}
-header .site-nav li {
-  list-style-type: none;
-  float: left;
-  padding-right: 45px;
-}
-header .site-nav li a {
-  text-decoration: none;
-  color: #323234;
-  padding: 10px;
-}
+
 /* begin - for header drop down menu */
-header .site-nav li:hover div.menu {
-  display: block;
-}
-header .site-nav li div.menu {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  margin-top: 4px;
-}
-header .site-nav li div.menu ul {
-  background: #004C7F;
-  border-radius: 0px 5px 5px 5px;
-}
-header .site-nav li div.menu ul li {
-  float: none;
-  padding: 3px 0px;
-}
-header .site-nav li div.menu ul li:first-of-type {
-  border-top-right-radius: 5px;
-}
-header .site-nav li div.menu ul li:last-of-type {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-header .site-nav li div.menu ul li:hover {
-  background: #1E8BC3;
-}
-header .site-nav li div.menu ul li a {
-  color: white;
-  padding-left: 15px;
-}
-header .site-nav li a.selected {
-  background: #004C7F;
-  color: white;
-  font-weight: 300;
-  border-radius: 5px;
-}
-header .site-nav li:hover a.allowhover {
-  background: #004C7F;
-  color: white;
-  border-radius: 5px;
+header .site-nav li {
+  a.selected {
+    background: $darkblue;
+    color: white;
+    font-weight: 300;
+    border-radius: em(5);
+  }
+  &:hover a.allowhover {
+    background: $darkblue;
+    color: white;
+    border-radius: em(5);
+  }
+
+  &:hover div.menu {
+  // this is for the Dental Care submenu
+    display: block;
+  }
+  div.menu {
+  // this is for the Dental Care submenu
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    margin-top: em(4);
+    ul {
+      background: $darkblue;
+      border-radius: em(0) em(5) em(5) em(5);
+      li {
+        float: none;
+        padding: em(3) em(0);
+        &:first-of-type {
+          border-top-right-radius: em(5);
+        }
+        &:last-of-type {
+          border-bottom-left-radius: em(5);
+          border-bottom-right-radius: em(5);
+        }
+        &:hover {
+          background: $blue;
+        }
+        a {
+          color: white;
+          padding-left: em(15);
+        }
+      }
+    }
+  }
 }
 /* end - for header drop down menu */
+
+
 header .modal-footer p {
   text-align: initial;
 }
 header .modal-body {
-  min-height: 346px;
+  min-height: em(346);
 }
 header #apptForm-success-msg {
   text-align: center;
-  padding-top: 100px;
+  padding-top: em(100);
 }

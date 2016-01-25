@@ -1,56 +1,60 @@
 
 /* footer */
 footer {
-  height: 244px;
-  background-color: #1E8BC3;
+  font-size: em(14);
+  height: em(244,14);
+  background-color: $blue;
   font-family: roboto;
-  font-size: 14px;
   color: #fff;
-  line-height: 26px;
-  margin-top: 36px;
+  line-height: em(26,14);
+  margin-top: em(36,14);
+  .footer-content {
+    padding-top: em(25,14);
+  }
 }
-footer .footer-content {
-  padding-top: 25px;
-}
-footer h4 {
-  margin: 0px;
-}
-footer ul {
-  padding-left: 0px;
-  margin: 0px;
-}
-footer li {
-  display: table;
-}
+
 footer .footer-section {
   display: inline-block;
-  padding-right: 12px;
-  width: 200px;
+  padding-right: em(12,14);
+  width: em(200,14);
+  h4 {
+    margin: 0px;
+  }
+  ul {
+    padding-left: 0px;
+    margin: 0px;
+    li {
+      display: table;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
-footer .footer-section a {
-  text-decoration: none;
-  color: white;
-}
+
 footer .footer-social-links {
-  width: 170px;
+  width: em(170,14);
+  span.icon {
+    padding-right: em(5,14);
+  }
 }
-footer .footer-social-links span.icon {
-  padding-right: 5px;
-}
+
 footer .footer-contact-info {
-  width: 220px;
+  width: em(220,14);
+  table td:first-of-type {
+    padding-right: em(10,14);
+  }
+  button {
+    background-color: $orange;
+    position: absolute;
+    font-size: em(14);
+    padding: em(10) em(20);
+    margin-top: em(10);
+    font-weight: 300;
+  }
 }
-footer .footer-contact-info table td:first-of-type {
-  padding-right: 10px;
-}
-footer .footer-contact-info button {
-  background-color: #F2784B;
-  position: absolute;
-  font-size: 14px;
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-weight: 300;
-}
+
 footer .footer-map {
   float: right;
 }
