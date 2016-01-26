@@ -1,0 +1,55 @@
+
+.main-window {
+  transition: all 0.15s ease-out;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+.sidebar {
+  display: none;  // just in case, for now lets set it to display none bc this feature is anyways not ready yet
+  height: 100%;
+  width: em(180);
+  position: fixed;
+  top: 0px;
+  z-index: 0;
+  background: $blue;
+  transition: all 0.15s ease-out;
+  padding-top: em(30);
+  ul {
+    list-style-type: none;
+    padding-left: em(30);
+    li {
+      & + li {
+        padding-top: em(14);
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}
+input#sidebartoggler {
+  display: none;
+  &:checked ~ .toggle {
+    left: em(200,30);
+  }
+  &:checked ~ .main-window {
+    margin-left: em(180);
+  }
+}
+.toggle {
+  // for now, use display none to hide the toggle.
+  // eventually on mobile breakpoint, show this toggle
+  display: none;
+  color: $blue;
+  font-size: em(30);
+  position: fixed;
+  z-index: 2;
+  top: em(20,30);
+  left: em(20,30);
+  transition: all 0.15s ease-out;
+  &:hover {
+    cursor: pointer;
+    color: $darkpurple;
+  }
+}

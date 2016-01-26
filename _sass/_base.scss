@@ -22,12 +22,14 @@ body {
 a, a:hover {
 	text-decoration: none;
 }
-button {
-  color: #fff;
+button.schedule-btn {
+	background-color: $orange;
+  color: white;
+	font-weight: 300;
   border: none;
   border-radius: 4px;
   padding: 20px;
-  &.schedule-btn:hover {
+  &:hover {
     box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
   }
 }
@@ -68,7 +70,7 @@ button {
   transition:top 1s linear;
 }
 .navbar-fixed {
-  top: -10px;
+  top: em(-10);
   z-index: 100;
   position: fixed;
 }

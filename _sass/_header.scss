@@ -16,9 +16,6 @@ header .header-banner .header-action-call {
   color: $black;
   position: relative;
   top: em(-30,16);
-  a {
-    text-decoration: none;
-  }
   span.icon-location {
     padding-left: em(4,16);
   }
@@ -30,8 +27,6 @@ header .header-banner .header-action-call {
     font-weight: 400;
   }
   button {
-    font-weight: 300;
-    background-color: $orange;
     padding: em(10,16) em(20,16);
     float: right;
     position: relative;
@@ -51,7 +46,6 @@ header .site-nav {
       float: left;
       padding-right: em(45);
       a {
-        text-decoration: none;
         color: $black;
         padding: em(10);
       }
