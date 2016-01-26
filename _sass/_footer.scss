@@ -5,7 +5,7 @@ footer {
   height: em(244,14);
   background-color: $blue;
   font-family: roboto;
-  color: #fff;
+  color: white;
   line-height: em(26,14);
   margin-top: em(36,14);
   .footer-content {
@@ -28,7 +28,6 @@ footer .footer-section {
     }
   }
   a {
-    text-decoration: none;
     color: white;
   }
 }
@@ -46,12 +45,10 @@ footer .footer-contact-info {
     padding-right: em(10,14);
   }
   button {
-    background-color: $orange;
     position: absolute;
     font-size: em(14);
     padding: em(10) em(20);
     margin-top: em(10);
-    font-weight: 300;
   }
 }
 
