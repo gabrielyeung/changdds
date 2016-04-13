@@ -53,3 +53,16 @@ input#sidebartoggler {
     color: $darkpurple;
   }
 }
+
+// -------------------------------------------------------------------------
+// --- mq mobile menu css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  .sidebar {
+    display: block;
+  }
+  .toggle {
+    display: block;
+  }
+}

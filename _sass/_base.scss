@@ -4,6 +4,9 @@ $basefont: 14;
 	@return ($target / $context) * 1em;
 }
 
+$mqMaxMobile: ((491 / 16) + 0em);
+
+
 /* site css */
 .visuallyhidden {
   display: none;
@@ -90,5 +93,26 @@ button.schedule-btn {
 		img {
 		  padding-top: em(8);
 		}
+	}
+}
+
+
+
+// -------------------------------------------------------------------------
+// --- mq base css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  .site-margin {
+    width: 100%;
+  }
+	html, body, .main-window {
+		min-height: 100vh;
+	}
+	body .main-window {
+		position: fixed;
+	}
+	img {
+		max-width: 100%;
 	}
 }

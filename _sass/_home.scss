@@ -53,3 +53,27 @@ section.reasons-to-believe-banner {
     }
   }
 }
+
+
+
+// -------------------------------------------------------------------------
+// --- mq home css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  .hero-banner figure {
+    figcaption {
+      bottom: em(5,32);
+      padding-left: em(20,32);
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+      p {
+        text-align: center;
+      }
+    }
+  }
+  section.reasons-to-believe-banner {
+    display: none;
+  }
+}

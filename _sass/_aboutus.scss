@@ -44,3 +44,22 @@
       }
   }
 }
+
+
+
+
+// -------------------------------------------------------------------------
+// --- mq aboutus css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  .aboutus-content .page-nav {
+    display: none;
+  }
+  .aboutus-content .page-content {
+    & > figure {
+      display: none;
+    }
+    margin: 0 em(10);
+  }
+}
