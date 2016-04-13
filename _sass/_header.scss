@@ -5,6 +5,9 @@ header {
 }
 header .header-banner {
   margin-bottom: em(20);
+  .mobile-header-title {
+    display: none;
+  }
   figure {
     margin-left: em(0);
     height: em(43);
@@ -113,4 +116,41 @@ header .modal-body {
 header #apptForm-success-msg {
   text-align: center;
   padding-top: em(100);
+}
+
+
+
+
+// -------------------------------------------------------------------------
+// --- mq header css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  header {
+    padding-top: em(20);
+    .header-banner {
+      padding-left: em(65);
+      margin-bottom: em(10);
+      .mobile-header-title {
+        display: block;
+        font-size: em(28);
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: calendas;
+        font-feature-settings: "salt" 2;
+        -moz-font-feature-settings: "salt" 2;
+        -ms-font-feature-settings: "salt" 2;
+        -webkit-font-feature-settings: "salt" 2;
+      }
+      a {
+        display: none;
+      }
+      .header-action-call {
+        display: none;
+      }
+    }
+    .site-nav {
+      display: none;
+    }
+  }
 }
