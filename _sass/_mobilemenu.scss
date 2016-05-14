@@ -6,13 +6,12 @@
   background-color: white;
 }
 .sidebar {
-  display: none;  // just in case, for now lets set it to display none bc this feature is anyways not ready yet
+  display: none; // hidden by default
   height: 100%;
   width: em(180);
   position: fixed;
   top: 0px;
   z-index: 0;
-  background: $blue;
   transition: all 0.15s ease-out;
   padding-top: em(30);
   ul {
@@ -23,22 +22,30 @@
         padding-top: em(14);
       }
       a {
-        color: white;
+        color: transparent;  // hidden by default
       }
     }
   }
 }
 input#sidebartoggler {
-  display: none;
-  &:checked ~ .toggle {
-    left: em(200,30);
-  }
-  &:checked ~ .main-window {
-    margin-left: em(180);
+  display: none;  // bidden by default
+  &:checked {  // once selected, do the following
+    ~ .toggle {
+      left: em(200,30);
+    }
+    ~ .main-window {
+      margin-left: em(180);
+    }
+    ~ .sidebar {
+      background: $blue;
+      ul li a {
+        color: white;
+      }
+    }
   }
 }
 .toggle {
-  // for now, use display none to hide the toggle.
+  // hidden by default
   // eventually on mobile breakpoint, show this toggle
   display: none;
   color: $blue;
