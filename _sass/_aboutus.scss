@@ -53,6 +53,9 @@
 // -------------------------------------------------------------------------
 
 @media only screen and (max-width:$mqMaxMobile) {
+  body .main-window.main-aboutus {
+    position: relative;
+  }
   .aboutus-content .page-nav {
     display: none;
   }
@@ -61,5 +64,17 @@
       display: none;
     }
     margin: 0 em(10);
+    .drchang-profile-pic {
+      width: 60%;
+    }
+    .drchang-bio p {
+      display: none;
+      &.mobile-show {
+        display: block;
+      }
+    }
+    .team {
+      display: none;
+    }
   }
 }
