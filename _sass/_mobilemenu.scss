@@ -19,10 +19,12 @@
     padding-left: em(30);
     li {
       & + li {
-        padding-top: em(14);
+        padding-top: em(24);
       }
       a {
         color: transparent;  // hidden by default
+        font-weight: bold;
+        font-size: 17px;
       }
     }
   }
