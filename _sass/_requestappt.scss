@@ -1,0 +1,20 @@
+
+// -------------------------------------------------------------------------
+// --- mq requestappt css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  .requestappt-content .page-nav {
+    display: none;
+  }
+  .requestappt-content .page-content {
+    margin-left: em(45);
+    #apptForm-success-msg {
+      padding-top: em(24);
+    }
+    form {
+      padding-top: em(24);
+      margin-right: em(45);
+    }
+  }
+}
