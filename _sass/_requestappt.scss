@@ -4,6 +4,9 @@
 // -------------------------------------------------------------------------
 
 @media only screen and (max-width:$mqMaxMobile) {
+  body .main-window.main-requestappt {
+    position: relative;
+  }
   .requestappt-content .page-nav {
     display: none;
   }
@@ -13,7 +16,7 @@
       padding-top: em(24);
     }
     form {
-      padding-top: em(24);
+      padding: em(24) 0;
       margin-right: em(45);
     }
   }
