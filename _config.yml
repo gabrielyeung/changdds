@@ -9,7 +9,9 @@ baseurl: "/changdds" # the subpath of your site, e.g. /blog
 # https://github.com/jekyll/jekyll/issues/332
 # https://github.com/jekyll/jekyll/pull/1291/files
 # then use.. jekyll serve --baseurl ''
+
 url: "http://www.quyenchangdds.com" # the base hostname & protocol for your site
+googleMapUrl: "https://www.google.com/maps/place/3388+Six+Forks+Rd,+Raleigh,+NC+27609/@35.826931,-78.632765,11z"
 
 # Sass settings
 sass:
