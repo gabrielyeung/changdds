@@ -1,0 +1,7 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+# http://ricostacruz.com/til/relative-paths-in-jekyll.html
+# https://github.com/jekyll/jekyll/issues/332
+# https://github.com/jekyll/jekyll/pull/1291/files
+# then use.. jekyll serve --baseurl ''
+# should be able to override configs like so
+# jekyll build --config _config.yml,config.prod.yml
