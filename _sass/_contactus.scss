@@ -8,11 +8,31 @@
       padding-right: em(10);
     }
     tr.email > td {
-      padding: em(8) 0;
+      padding: em(2) 0;
+    }
+    td a {
+      color: black;
     }
   }
   section p {
     padding-bottom: em(24);
+  }
+  section.weekly-schedule {
+    h2 {
+      font-weight: bold;
+    }
+    .hours-table {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        &:nth-child(2n+1) {
+          width: 40%;
+          color: $blue;
+          font-weight: 300;
+        }
+        width: 50%;
+      }
+    }
   }
 }
 
