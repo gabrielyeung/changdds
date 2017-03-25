@@ -5,7 +5,7 @@
   z-index: 1;
   background-color: white;
 }
-.sidebar {
+.mobile-sidebar {
   display: none; // hidden by default
   height: 100%;
   width: em(180);
@@ -38,7 +38,7 @@ input#sidebartoggler {
     ~ .main-window {
       margin-left: em(180);
     }
-    ~ .sidebar {
+    ~ .mobile-sidebar {
       background: $blue;
       ul li a {
         color: white;
@@ -68,7 +68,7 @@ input#sidebartoggler {
 // -------------------------------------------------------------------------
 
 @media only screen and (max-width:$mqMaxMobile) {
-  .sidebar {
+  .mobile-sidebar {
     display: block;
   }
   .toggle {
