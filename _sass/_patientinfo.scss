@@ -3,3 +3,24 @@
 .patientinfo-content .page-content h1 {
   padding-top: em(8,24);
 }
+
+
+
+// -------------------------------------------------------------------------
+// --- mq aboutus css
+// -------------------------------------------------------------------------
+
+@media only screen and (max-width:$mqMaxMobile) {
+  body .main-window.main-patientinfo {
+    position: relative;
+  }
+  .patientinfo-content .page-nav {
+    display: none;
+  }
+  .patientinfo-content .page-content {
+    & > figure {
+      display: none;
+    }
+    margin: 0 em(10);
+  }
+}
