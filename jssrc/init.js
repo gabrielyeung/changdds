@@ -25,7 +25,7 @@
 
   // http://stackoverflow.com/questions/7717527/jquery-smooth-scrolling-when-clicking-an-anchor-link
   var $root = $('html, body');
-  $('a').click(function() {
+  $('.patientinfo-content .page-nav a, .aboutus-content .page-nav a').click(function() {
       $root.animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top
       }, 500);
@@ -35,7 +35,7 @@
   // http://stackoverflow.com/questions/28452235/make-a-nav-bar-stick-to-the-top-when-scrolling-with-css
   // http://jsfiddle.net/CriddleCraddle/Wj9dD/
   $(window).scroll(function () {
-    //if you hard code, then use console.log to determine when you want the nav bar to stick.  
+    //if you hard code, then use console.log to determine when you want the nav bar to stick.
     var offset = $(window).scrollTop();
     //console.log(offset)
     var $aboutus_nav = $('.aboutus-content .page-nav');
