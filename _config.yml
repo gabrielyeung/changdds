@@ -1,7 +1,6 @@
 # Site settings
 title: Quyen D. Chang DDS, family dentist in Raleigh NC
-description: > # this means to ignore newlines until "baseurl:"
-  Raleigh Family Dentist Dr. Quyen D. Chang provides gentle and comprehensive general dental care, and has practiced dentistry in the Triangle area for 27 years. We are conveniently located near North Hills Mall.
+description: Raleigh Family Dentist Dr. Quyen D. Chang provides gentle and comprehensive general dental care, and has practiced dentistry in the Triangle area for 27 years. We are conveniently located near North Hills Mall.
 keywords: "Raleigh NC, Dentist, Family Dentist"
 baseurl: "/changdds" # the subpath of your site, e.g. /blog
 # ** for prod, when you want the root path as "/" use..
