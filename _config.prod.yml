@@ -3,5 +3,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # https://github.com/jekyll/jekyll/issues/332
 # https://github.com/jekyll/jekyll/pull/1291/files
 # then use.. jekyll serve --baseurl ''
+
 # should be able to override configs like so
 # jekyll build --config _config.yml,_config.prod.yml
+
+# note to self -
+# when you want to prod upload, you want to run the `build`
+# https://stackoverflow.com/questions/41511696/jekyll-build-is-putting-localhost-links-in-site-production-files
