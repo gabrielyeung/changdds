@@ -1,0 +1,10 @@
+<section class="teammate">
+  <figure>
+    <img src="{{site.baseurl}}/img/bio/{{ include.img }}" alt="{{ include.name }}'s profile picture">
+  </figure>
+  <h3 class="name">{{ include.name }}</h3>
+  <h4 class="job">{{ include.job }}</h4>
+  {% if include.bio %}
+    <p class="bio">{{ include.bio }}</p>
+  {% endif %}
+</section>
