@@ -42,30 +42,23 @@ title: About Us
 
       <section class="team">
         <h1 id="Meet-the-Team">Meet the Team</h1>
-        <section class="teammate">
-          <figure>
-            <img src="{{site.baseurl}}/img/bio/rosa.png" alt="Rosa's profile picture">
-          </figure>
-          <h3 class="name">Rosa</h3>
-          <h4 class="job">Assistant</h4>
-          <p class="bio">Rosa has been with our team since 2005, and continues to build meaningful relationships with the patients she works with daily.  She enjoys reading as well as spending time with her family, which takes up most of her free time! She is fluent in Spanish.</p>
-        </section>
-        <section class="teammate">
-          <figure>
-            <img src="{{site.baseurl}}/img/bio/barbara.png" alt="Barbara's profile picture">
-          </figure>
-          <h3 class="name">Barbara</h3>
-          <h4 class="job">Hygienist</h4>
-          <p class="bio">Barbara has been with our team since 1994, and brings a great amount of experience and expertise to our practice.  Her hobbies include doing crossword puzzles, taking care of her dog and cat, and playing with her grandchild whenever she has a chance.</p>
-        </section>
-        <section class="teammate">
-          <figure>
-            <img src="{{site.baseurl}}/img/bio/placeholder.png" alt="Placeholder profile picture">
-          </figure>
-          <h3 class="name">Patricia</h3>
-          <h4 class="job">Office Administrator</h4>
-          <p class="bio">Patricia joined our team June 2018 and looks forward to getting to know our patients better! She is fluent in Cantonese and Mandarin.</p>
-        </section>
+
+        {% include aboutus/teammate.html
+            name="Rosa"
+            job="Assistant"
+            bio="Rosa has been with our team since 2005, and continues to build meaningful relationships with the patients she works with daily.  She enjoys reading as well as spending time with her family, which takes up most of her free time! She is fluent in Spanish."
+            img="rosa.png" %}
+
+        {% include aboutus/teammate.html
+            name="Chi"
+            job="Hygienist"
+            img="chi.png" %}
+
+        {% include aboutus/teammate.html
+            name="Adriana"
+            job="Office Administrator"
+            img="adriana.png" %}
+
       </section>
 
       <section class="history">
