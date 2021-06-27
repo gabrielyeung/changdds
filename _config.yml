@@ -14,6 +14,7 @@ baseurl: "/changdds" # the subpath of your site, e.g. /blog
 
 url: "https://www.quyenchangdds.com" # the base hostname & protocol for your site
 email: info@quyenchangdds.com
+phone: (919) 783-6551
 googleMapUrl: "https://www.google.com/maps/place/3388+Six+Forks+Rd,+Raleigh,+NC+27609/@35.826931,-78.632765,11z"
 
 # Sass settings
