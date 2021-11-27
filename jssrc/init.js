@@ -7,6 +7,14 @@
       // handle the invalid form...
       // console.log('bad');
     } else {
+      // check if captcha token is present
+      const token = document.getElementById('captcha-token').value;
+      const captchaInstructionEle = document.getElementById('captcha-instruction');
+      if (token == undefined || token.length == 0) {
+        captchaInstructionEle.classList.remove("visuallyhidden");
+        return false;
+      }
+
       // everything looks good!
       // console.log('looks good');
 
@@ -15,6 +23,7 @@
       }
       $('#apptForm').fadeOut(300, "linear", complete);
       $('#apptForm-send-btn').fadeOut();
+      $('#g-recaptcha-container').fadeOut();
 
       $.post($(this).attr('action'), $(this).serialize(), function(response){
             // do something here on success

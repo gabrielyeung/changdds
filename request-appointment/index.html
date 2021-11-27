@@ -26,12 +26,16 @@ category: requestappt
         </div>
         <div class="form-group">
           <label for="contact-email" class="control-label">Email:</label>
-          <input type="email" class="form-control" id="contact-email" name="email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" data-error="Please fill in your email" required>
+          <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" data-error="Please fill in your email" required>
           <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
           <label for="contact-message" class="control-label">Additional Comments:</label>
           <textarea class="form-control" id="contact-message" name="message"></textarea>
+        </div>
+        <div class="form-group">
+          <div id="g-recaptcha-container" class="g-recaptcha"></div>
+          <p id="captcha-instruction" class="visuallyhidden">Please verify Captcha</p>
         </div>
         <input type="submit" class="btn btn-primary" value="Send message">
       </form>
