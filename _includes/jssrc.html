@@ -2,3 +2,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="{{site.baseurl}}/jssrc/validator.js"></script>
 <script src="{{site.baseurl}}/jssrc/init.js"></script>
+
+<script type="text/javascript">
+  const onCaptchaClickSuccess = token => {
+    document.getElementById('captcha-token').value = token;
+    document.getElementById('captcha-instruction').classList.add("visuallyhidden");
+  };
+  const onExpiration = () => {
+    document.getElementById('captcha-token').value = '';
+  };
+  var loadCaptcha = () => {
+    grecaptcha.render('g-recaptcha-container', {
+      sitekey : '{{site.captchaSiteKey}}',
+      callback: onCaptchaClickSuccess,
+      'expired-callback': onExpiration
+    });
+  };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit" async defer></script>

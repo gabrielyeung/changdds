@@ -111,9 +111,6 @@ header .site-nav li {
 /* end - for header drop down menu */
 
 
-header .modal-footer p {
-  text-align: initial;
-}
 header .modal-body {
   min-height: em(346);
 }
@@ -121,7 +118,17 @@ header #apptForm-success-msg {
   text-align: center;
   padding-top: em(100);
 }
-
+header .modal-footer p {
+  text-align: initial;
+}
+#apptModal .modal-footer .g-recaptcha > div {
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+#captcha-instruction {
+  color: #a94442;
+}
 
 
 

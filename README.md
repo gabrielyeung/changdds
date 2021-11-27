@@ -15,3 +15,16 @@
   - issue with url being localhost
   - serve command is for localhost
   - build command preps for prod
+
+
+
+## Captcha Notes
+https://developers.google.com/recaptcha/docs/display#render_param
+To test backend
+- setup Postman
+  POST: https://quyenchangdds.com/contact-form-handler.php
+  click body tab, add the following keys
+  - name
+  - number
+  - email
+  - g-recaptcha-response or token

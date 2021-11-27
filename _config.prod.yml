@@ -10,3 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # note to self -
 # when you want to prod upload, you want to run the `build`
 # https://stackoverflow.com/questions/41511696/jekyll-build-is-putting-localhost-links-in-site-production-files
+
+# see Tim's email, F 11/12/2021, CAPTCHA
+captchaSiteKey: 6Lf4ni0dAAAAAAoU94TVfumPMb18bpjyV8-NH9cp
+# prod secret - 6Lf4ni0dAAAAALruWjzVxcosZCDiRWGFYP_M82SC

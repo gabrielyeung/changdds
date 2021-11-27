@@ -17,6 +17,18 @@ email: info@quyenchangdds.com
 phone: (919) 783-6551
 googleMapUrl: "https://www.google.com/maps/place/3388+Six+Forks+Rd,+Raleigh,+NC+27609/@35.826931,-78.632765,11z"
 
+# see Tim's email, F 11/12/2021, CAPTCHA
+# captchaSiteKey: 6Lf4ni0dAAAAAAoU94TVfumPMb18bpjyV8-NH9cp
+
+# testing / localhost
+# https://www.google.com/recaptcha/admin/site/489582531
+# localhost site key - 6LfDby4dAAAAAFKjBzdtuQrBf3yVYpkd9grRonFW
+# localhost secret - 6LfDby4dAAAAADgSBYMhVxn7CXnCdXgAfOe5lOpL
+# then test via
+# http://localhost:4000/changdds/
+captchaSiteKey: 6LfDby4dAAAAAFKjBzdtuQrBf3yVYpkd9grRonFW
+
+
 # Sass settings
 sass:
     style: compressed
