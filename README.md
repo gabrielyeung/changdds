@@ -1,15 +1,24 @@
 
-## install steps
+## Install steps
 - https://jekyllrb.com/docs/installation/macos/
 
+### Install notes ** current as of S 6/19/2022
+- use ruby-2.7.6 instead
+- gems issue w/ ruby-3.0.0+, see https://jekyllrb.com/docs/
+  - https://gist.github.com/MelissaKaulfuss/a1bed20d8c8ad847e1e20e43615ddc9f
+  - https://www.ruby-lang.org/en/downloads/releases/
+  - https://github.com/jekyll/jekyll/issues/8523
+  - https://github.com/github/pages-gem/issues/752
 
-## app start up, for local dev
+
+## App start up, for local dev
 - refer to notes in `_config.yml`
   - `jekyll serve --baseurl ''` --> to emulate prod, when you want the root path as "/"
   - `jekyll serve` --> daily dev use
 
 
-## for prod upload
+
+## For prod upload
 `jekyll build --config _config.yml,_config.prod.yml`
 - https://stackoverflow.com/questions/41511696/jekyll-build-is-putting-localhost-links-in-site-production-files
   - issue with url being localhost
