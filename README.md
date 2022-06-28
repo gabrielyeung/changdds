@@ -10,6 +10,11 @@
   - https://github.com/jekyll/jekyll/issues/8523
   - https://github.com/github/pages-gem/issues/752
 
+### SFTP setup
+https://help.dreamhost.com/hc/en-us/articles/115001051531-FTP-security
+https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials
+
+
 
 ## App start up, for local dev
 - refer to notes in `_config.yml`
@@ -37,3 +42,5 @@ To test backend
   - number
   - email
   - g-recaptcha-response or token
+
+
