@@ -2,6 +2,9 @@
 header {
   padding-top: em(30);
   font-family: roboto;
+  .alert a {
+    white-space: nowrap;
+  }
   .alert-red {
     color: red;
     background-color: pink;
