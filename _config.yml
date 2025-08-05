@@ -1,6 +1,6 @@
 # Site settings
-title: Quyen D. Chang DDS, family dentist in Raleigh NC
-description: Raleigh Family Dentist Dr. Quyen D. Chang provides gentle and comprehensive general dental care, and has practiced dentistry in the Triangle area for 27 years. We are conveniently located near North Hills Mall.
+title: Timothy C. Chang DDS, family dentist in Raleigh NC
+description: Raleigh Family Dentist Dr. Timothy C. Chang provides gentle and comprehensive general dental care, and both he and his mother Dr. Quyen D. Chang have practiced dentistry in the Triangle area for over 30 years. We are conveniently located near North Hills Mall.
 keywords: "Raleigh NC, Dentist, Family Dentist"
 baseurl: "/changdds" # the subpath of your site, e.g. /blog
 # ** for prod, when you want the root path as "/" use..
@@ -12,8 +12,8 @@ baseurl: "/changdds" # the subpath of your site, e.g. /blog
 # https://github.com/jekyll/jekyll/issues/332
 # https://github.com/jekyll/jekyll/pull/1291/files
 
-url: "https://www.quyenchangdds.com" # the base hostname & protocol for your site
-email: info@quyenchangdds.com
+url: "https://www.timchangdds.com" # the base hostname & protocol for your site
+email: info@timchangdds.com
 phone: (919) 783-6551
 phoneText: (919) 213-0086
 phoneRaw: 19197836551
