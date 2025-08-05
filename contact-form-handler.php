@@ -1,7 +1,7 @@
 <?php
 $errors = '';
 // $myemail = 'gabs1523@gmail.com';
-$myemail = 'info@quyenchangdds.com';
+$myemail = 'info@timchangdds.com';
 
 
 
